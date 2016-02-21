@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Beauty"
+            android:textColor="#19b31e"
+            android:id="@+id/Beauty"
+            android:layout_weight="0.16" />
+
+        <CheckBox
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Vaccination"
+            android:textColor="#19b31e"
+            android:id="@+id/Vaccinate"
+            android:layout_weight="0.16" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout"
+        android:weightSum="1">
+
+    <CheckBox
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Hospital"
+        android:textColor="#19b31e"
+        android:layout_marginRight="15dp"
+        android:id="@+id/Hosptial"
+        android:layout_weight="0.14" />
+
+    <CheckBox
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="ETC"
+        android:textColor="#19b31e"
+        android:id="@+id/Etc"
+        android:layout_weight="0.15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Date :  "
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Insert Date"
+            android:id="@+id/Date"
+            android:maxLength="15"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Note :  "
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Insert Data"
+            android:maxLength="60"
+            android:id="@+id/Note"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/save"
+        android:id="@+id/Save"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
